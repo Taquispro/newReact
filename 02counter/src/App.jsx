@@ -5,6 +5,16 @@ function App() {
   const [counter, setCounter] = useState(0);
   const addValue = () => {
     setCounter(counter + 1);
+    setCounter(counter + 1);
+    setCounter(counter + 1);
+    setCounter(counter + 1);
+    //it wontr increment the counter 4times instead only one times
+    //therefore we can use this code(note that this is asked in interview)
+    setCounter((counter) => counter + 1);
+    setCounter((counter) => counter + 1);
+    setCounter((counter) => counter + 1);
+    setCounter((counter) => counter + 1);
+
     console.log(counter);
   };
   const removeValue = () => {
