@@ -5,12 +5,23 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Currency Converter.io</title>
+    <style>
+      /* Ensure the background image covers the entire screen and is responsive */
+      body {
+        background-image: url("https://images.unsplash.com/photo-1516245834210-c4c142787335?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        background-size: cover; /* Ensure the background image covers the whole viewport */
+        background-position: center center; /* Center the image */
+        background-attachment: fixed; /* Fix the image while scrolling */
+        background-repeat: no-repeat; /* Prevent repetition of the image */
+        margin: 0;
+        height: 100vh; /* Ensure full height for all screen sizes */
+      }
+      html {
+        height: 100%;
+      }
+    </style>
   </head>
-  <body
-    style="
-      background-image: url('https://images.unsplash.com/photo-1516245834210-c4c142787335?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    "
-  >
+  <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
